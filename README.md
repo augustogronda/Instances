@@ -74,5 +74,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 #### User Interface
 Include a screenshot of the interface here, for example:
-![User Interface](./images/Instancesimage.jpg
+![User Interface](./Images/Instancesimage.jpg)
 )
