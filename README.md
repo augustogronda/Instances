@@ -73,6 +73,6 @@ This project is licensed under the [MIT License](LICENSE).
 ### Example Screenshots
 
 #### User Interface
-Include a screenshot of the interface here, for example:
+
 ![User Interface](./Images/Instancesimage.jpg)
 )
