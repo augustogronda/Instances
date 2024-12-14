@@ -116,7 +116,7 @@ def close_windows():
 
 
 root = Tk()
-root.title("Abrir instancias de Chrome")
+root.title("Instances")
 
 
 config = load_config()
@@ -134,20 +134,20 @@ Label(root, text="URL:").grid(row=0, column=0, padx=10, pady=5)
 url_entry = Entry(root, width=40)
 url_entry.insert(0, url_entry_value)
 url_entry.grid(row=0, column=1, padx=10, pady=5)
-Label(root, text="Insertar URL con https:// como por ejemplo https://www.google.com.ar/").grid(row=1, column=1, padx=10, pady=5)
+Label(root, text="Insert URL with 'https://' for example https://www.google.com.ar/").grid(row=1, column=1, padx=10, pady=5)
 
-Label(root, text="Número de instancias:").grid(row=2, column=0, padx=10, pady=5)
-Label(root, text="Cada instancia es una ventana de navegador distinta\nAproximadamente 100 MB de RAM por instancia.").grid(row=3, column=1, padx=10, pady=5)
+Label(root, text="number of instances:").grid(row=2, column=0, padx=10, pady=5)
+Label(root, text="Each instance is a separate browser window with approximately 100 MB of RAM per instance.").grid(row=3, column=1, padx=10, pady=5)
 
 instances_entry = Entry(root, width=10)
 instances_entry.insert(0, instances_entry_value) 
 instances_entry.grid(row=2, column=1, padx=10, pady=5)
 
-Button(root, text="Seleccionar ChromeDriver", command=select_chromedriver).grid(row=5, column=0, columnspan=2, pady=5)
+Button(root, text="Select ChromeDriver location", command=select_chromedriver).grid(row=5, column=0, columnspan=2, pady=5)
 
-Button(root, text="Ejecutar", command=execute_script).grid(row=6, column=0, columnspan=2, pady=10)
+Button(root, text="Run", command=execute_script).grid(row=6, column=0, columnspan=2, pady=10)
 
-close_button = Button(root, text="Cerrar ventanas", command=close_windows, state="disabled")
+close_button = Button(root, text="Close Windows", command=close_windows, state="disabled")
 close_button.grid(row=6, column=0, columnspan=2, pady=10)
 
 root.mainloop()
