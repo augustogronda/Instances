@@ -1,0 +1,41 @@
+﻿Traceback (most recent call last):
+  File "C:\Users\augus\repos\instancesgit\Instances\test.py", line 10, in <module>
+    driver.get('https://example.com')
+  File "C:\Users\augus\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 363, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\augus\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\augus\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff60fb4a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff60fb4a950+14eb0]
+	chromedriver!(No symbol) [0x7ff60f8bd6ed]
+	chromedriver!(No symbol) [0x7ff60f8ba224]
+	chromedriver!(No symbol) [0x7ff60f8aa191]
+	chromedriver!(No symbol) [0x7ff60f8ac07f]
+	chromedriver!(No symbol) [0x7ff60f8aa733]
+	chromedriver!(No symbol) [0x7ff60f8a9efb]
+	chromedriver!(No symbol) [0x7ff60f8a9bb1]
+	chromedriver!(No symbol) [0x7ff60f8a77e1]
+	chromedriver!(No symbol) [0x7ff60f8a7f42]
+	chromedriver!(No symbol) [0x7ff60f8c19a6]
+	chromedriver!(No symbol) [0x7ff60f965664]
+	chromedriver!(No symbol) [0x7ff60f94002a]
+	chromedriver!(No symbol) [0x7ff60f96483b]
+	chromedriver!(No symbol) [0x7ff60f9090e8]
+	chromedriver!(No symbol) [0x7ff60f909fc3]
+	chromedriver!GetHandleVerifier [0x7ff60fe60149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff60fe5a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff60fe7c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff60fb67cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff60fb7087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff60fb540e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff60fb54296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff60fb38737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffe5edfe8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffe5f84c48c+2c]
+
+
